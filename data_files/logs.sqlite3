@@ -1,3 +1,0 @@
-sqllite
-date, level, msg
-SELECT * INTO 2020, 6, 15 , 'WARNING', "Some warning message"
