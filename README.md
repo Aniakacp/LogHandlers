@@ -10,6 +10,7 @@ Log Levels:
 DEBUG -> INFO -> WARNING -> ERROR -> CRITICAL
 
 Example usage:
+
 csv_handler = CSVHandler("data_files/logs.csv")
 file_handler = FileHandler("data_files/logs.txt")
 json_handler = JsonHandler("data_files/logs.json")
