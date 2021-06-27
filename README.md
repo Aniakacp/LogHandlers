@@ -12,13 +12,17 @@ DEBUG -> INFO -> WARNING -> ERROR -> CRITICAL
 Example usage:
 
 csv_handler = CSVHandler("data_files/logs.csv")
+
 file_handler = FileHandler("data_files/logs.txt")
 
 logger = ProfilLogger(handlers=[file_handler, csv_handler])
+
 logger.set_log_level(level="INFO")
 
 a = logger.info( msg="Some info message")
+
 file_handler.write(a)
+
 json_handler.write(a)
 
 file_handler = FileHandler("data_files/logs.txt")
